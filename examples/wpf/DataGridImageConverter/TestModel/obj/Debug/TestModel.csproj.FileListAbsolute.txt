@@ -1,0 +1,17 @@
+C:\Developement\MyCommonInfo\@Demos\DefaultCollection\tests\Test Projects\WPF\DataGridImageConverter\TestModel\bin\Debug\TestModel.dll
+C:\Developement\MyCommonInfo\@Demos\DefaultCollection\tests\Test Projects\WPF\DataGridImageConverter\TestModel\bin\Debug\TestModel.pdb
+C:\Developement\MyCommonInfo\@Demos\DefaultCollection\tests\Test Projects\WPF\DataGridImageConverter\TestModel\bin\Debug\MvvMLightLib.dll
+C:\Developement\MyCommonInfo\@Demos\DefaultCollection\tests\Test Projects\WPF\DataGridImageConverter\TestModel\bin\Debug\MvvMLightLib.pdb
+C:\Developement\MyCommonInfo\@Demos\DefaultCollection\tests\Test Projects\WPF\DataGridImageConverter\TestModel\obj\Debug\TestModel.csproj.CoreCompileInputs.cache
+C:\Developement\MyCommonInfo\@Demos\DefaultCollection\tests\Test Projects\WPF\DataGridImageConverter\TestModel\obj\Debug\TestModel.csproj.CopyComplete
+C:\Developement\MyCommonInfo\@Demos\DefaultCollection\tests\Test Projects\WPF\DataGridImageConverter\TestModel\obj\Debug\TestModel.dll
+C:\Developement\MyCommonInfo\@Demos\DefaultCollection\tests\Test Projects\WPF\DataGridImageConverter\TestModel\obj\Debug\TestModel.pdb
+C:\Developement\MyCommonInfo\@Demos\Test Projects\WPF\DataGridImageConverter\TestModel\bin\Debug\TestModel.dll
+C:\Developement\MyCommonInfo\@Demos\Test Projects\WPF\DataGridImageConverter\TestModel\bin\Debug\TestModel.pdb
+C:\Developement\MyCommonInfo\@Demos\Test Projects\WPF\DataGridImageConverter\TestModel\bin\Debug\MvvMLightLib.dll
+C:\Developement\MyCommonInfo\@Demos\Test Projects\WPF\DataGridImageConverter\TestModel\bin\Debug\MvvMLightLib.pdb
+C:\Developement\MyCommonInfo\@Demos\Test Projects\WPF\DataGridImageConverter\TestModel\obj\Debug\TestModel.csprojAssemblyReference.cache
+C:\Developement\MyCommonInfo\@Demos\Test Projects\WPF\DataGridImageConverter\TestModel\obj\Debug\TestModel.csproj.CoreCompileInputs.cache
+C:\Developement\MyCommonInfo\@Demos\Test Projects\WPF\DataGridImageConverter\TestModel\obj\Debug\TestModel.csproj.CopyComplete
+C:\Developement\MyCommonInfo\@Demos\Test Projects\WPF\DataGridImageConverter\TestModel\obj\Debug\TestModel.dll
+C:\Developement\MyCommonInfo\@Demos\Test Projects\WPF\DataGridImageConverter\TestModel\obj\Debug\TestModel.pdb
