@@ -7,6 +7,41 @@ Marketplace
 Explore
  
 @doubleII 
+<<<<<<< HEAD
+=======
+doubleII
+/
+Libraries
+1
+0
+0
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Libraries/.gitignore
+@doubleII
+doubleII Create .gitignore
+Latest commit f2cfee3 16 minutes ago
+ History
+ 1 contributor
+406 lines (332 sloc)  6.67 KB
+  
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@doubleII 
+>>>>>>> 1c1b98b (examples and gitignore added)
 github
 /
 gitignore
@@ -404,3 +439,18 @@ API
 Training
 Blog
 About
+<<<<<<< HEAD
+=======
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+>>>>>>> 1c1b98b (examples and gitignore added)
