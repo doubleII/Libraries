@@ -1,0 +1,5 @@
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\Commands\obj\Debug\Commands.csproj.CoreCompileInputs.cache
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\Commands\bin\Debug\Commands.dll
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\Commands\bin\Debug\Commands.pdb
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\Commands\obj\Debug\Commands.dll
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\Commands\obj\Debug\Commands.pdb

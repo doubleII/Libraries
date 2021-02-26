@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="MvvmNavigation.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:MvvmNavigation"
+             mc:Ignorable="d"
+             d:DesignHeight="280"
+             d:DesignWidth="280">
+    <Grid>
+        <Button
+            Content="Go to View 2"
+            Command="{Binding GoTo2}"
+            Width="90" Height="30" />
+    </Grid>
+</UserControl>

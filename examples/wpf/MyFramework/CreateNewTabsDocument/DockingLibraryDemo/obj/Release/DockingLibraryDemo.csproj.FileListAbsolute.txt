@@ -1,0 +1,16 @@
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\bin\Release\DockingLibraryDemo.exe.config
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\bin\Release\DockingLibraryDemo.exe
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\bin\Release\DockingLibrary.dll
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\obj\Release\DockingLibraryDemo.csprojAssemblyReference.cache
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\obj\Release\DocWindow.baml
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\obj\Release\MainWindow.baml
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\obj\Release\DocWindow.g.cs
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\obj\Release\MainWindow.g.cs
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\obj\Release\App.g.cs
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\obj\Release\DockingLibraryDemo_MarkupCompile.cache
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\obj\Release\DockingLibraryDemo.g.resources
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\obj\Release\DockingLibraryDemo.Properties.Resources.resources
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\obj\Release\DockingLibraryDemo.csproj.GenerateResource.cache
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\obj\Release\DockingLibraryDemo.csproj.CoreCompileInputs.cache
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\obj\Release\DockingLibraryDemo.csproj.CopyComplete
+C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\CreateNewTabsDocument\DockingLibraryDemo\obj\Release\DockingLibraryDemo.exe
