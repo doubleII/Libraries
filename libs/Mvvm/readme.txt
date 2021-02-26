@@ -1,0 +1,1 @@
+For Navigation use Prism.Core NuGet package

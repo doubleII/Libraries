@@ -1,0 +1,13 @@
+C:\Developement\DefaultCollection\Generic_KTW\Generic_KTW\src\New\core\IPage\bin\Debug\GerSoundex.dll
+C:\Developement\DefaultCollection\Generic_KTW\Generic_KTW\src\New\core\IPage\bin\Debug\IPage.dll
+C:\Developement\DefaultCollection\Generic_KTW\Generic_KTW\src\New\core\IPage\bin\Debug\IPage.pdb
+C:\Developement\DefaultCollection\Generic_KTW\Generic_KTW\src\New\core\IPage\obj\Debug\IPage.csproj.CoreCompileInputs.cache
+C:\Developement\DefaultCollection\Generic_KTW\Generic_KTW\src\New\core\IPage\obj\Debug\IPage.dll
+C:\Developement\DefaultCollection\Generic_KTW\Generic_KTW\src\New\core\IPage\obj\Debug\IPage.pdb
+C:\Developement\DefaultCollection\Generic_KTW\Generic_KTW\src\New\core\IPage\bin\Debug\Prism.dll
+C:\Developement\DefaultCollection\Generic_KTW\Generic_KTW\src\New\core\IPage\bin\Debug\System.ValueTuple.dll
+C:\Developement\DefaultCollection\Generic_KTW\Generic_KTW\src\New\core\IPage\bin\Debug\Prism.pdb
+C:\Developement\DefaultCollection\Generic_KTW\Generic_KTW\src\New\core\IPage\bin\Debug\Prism.xml
+C:\Developement\DefaultCollection\Generic_KTW\Generic_KTW\src\New\core\IPage\bin\Debug\System.ValueTuple.xml
+C:\Developement\DefaultCollection\Generic_KTW\Generic_KTW\src\New\core\IPage\obj\Debug\IPage.csproj.CopyComplete
+C:\Developement\DefaultCollection\Generic_KTW\Generic_KTW\src\New\core\IPage\obj\Debug\IPage.csprojAssemblyReference.cache
