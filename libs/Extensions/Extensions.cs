@@ -69,5 +69,70 @@ namespace Extensions
                                    prop.SetValue(source, null, null);
                            }) ;
         }
+		
+		
+		        /// <summary>
+        /// enable property if contains name
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="names"></param>
+        public static void Enable<T>(this T source, string name)
+        {
+            if (source is null)
+                return;
+
+            PropertyCache<T>.PublicProperties
+                           .Where(prop => prop.Name.Contains(name) && prop.CanWrite is true ? true : false)
+                           .ToList().ForEach(prop =>
+                           {
+                               if (prop.GetValue(source) is false)
+                                   prop.SetValue(source, true);
+                           });
+        }
+
+        /// <summary>
+        /// desable property if contains name
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="names"></param>
+        public static void Desable<T>(this T source, string name)
+        {
+            if (source is null)
+                return;
+
+            PropertyCache<T>.PublicProperties
+                           .Where(prop => prop.Name.Contains(name) && prop.CanWrite is true ? true : false)
+                           .ToList().ForEach(prop => 
+                           {
+                               if(prop.GetValue(source) is true )
+                                    prop.SetValue(source, false); 
+                           });
+        }
+		
+		       /// <summary>
+        /// check if empty property if contains name
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="names"></param>
+        public static bool IsEmpty<T>(this T source, string name)
+        {
+            bool result = true;
+            if (source is null)
+                return result;
+
+            PropertyCache<T>.PublicProperties
+                           .Where(prop => prop.Name == name)
+                           .ToList().ForEach(prop =>
+                           {
+                               var value = prop.GetValue(source);
+                               if (!string.IsNullOrEmpty($"{value}"))
+                                   result = false;
+                                   
+                           });
+            return result;
+        }
     }
 }

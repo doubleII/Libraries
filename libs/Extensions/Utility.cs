@@ -14,6 +14,13 @@ namespace Extensions
 {
     public static class Utility
     {
+		
+		
+        private string ByteArrayToString(byte[] arr)
+        {
+            System.Text.Encoding enc = System.Text.Encoding.GetEncoding("ISO-8859-1");
+            return enc.GetString(arr);
+        }
 
         /// <summary>
         /// 
@@ -253,6 +260,32 @@ namespace Extensions
                 process.WaitForExit();
                 int exitcode = process.ExitCode;
                 return exitcode;
+            }
+        }
+		
+		public static uint? TryParseNullable(this string val)
+        {
+            int outValue;
+            return int.TryParse(val, out outValue) ? (uint?)outValue : null;
+        }
+		
+		 /// <summary>
+        /// async await for methods thea are called from constructor
+        /// </summary>
+        /// <param name="task"></param>
+        /// <param name="continueOnCapturedContext"></param>
+        /// <param name="onException"></param>
+	    public static async void SafeFireAndForget(this System.Threading.Tasks.Task task, bool continueOnCapturedContext = true, Action<Exception> onException = null)
+        {
+            try
+            {
+
+                await task.ConfigureAwait(continueOnCapturedContext);
+            }
+            catch (Exception ex) when (onException != null)
+            {
+
+                onException(ex);
             }
         }
     }
