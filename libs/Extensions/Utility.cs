@@ -269,6 +269,20 @@ namespace Extensions
             return int.TryParse(val, out outValue) ? (uint?)outValue : null;
         }
 		
+		
+		public static string UppercaseFirst(this string str)
+        {
+            if (string.IsNullOrEmpty(str))
+                return string.Empty;
+
+            return char.ToUpper(str[0]) + str.Substring(1).ToLower();
+        }
+		
+		
+		
+		
+		
+		
 		 /// <summary>
         /// async await for methods thea are called from constructor
         /// </summary>
