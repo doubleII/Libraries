@@ -19,7 +19,7 @@ Invoke-WebRequest 'http://web.mit.edu/crypto/openssl.cnf' -OutFile c:\certs\open
 # Change / to \ in the CA_default section if performing Certificate Authority tasks
 ise C:\certs\openssl.cnf # open file
 
-# Create Directory: C:\Users\iivanov\Documents\WindowsPowerShell
+# Create Directory: C:\Users\<userbane>\Documents\WindowsPowerShell
 if (-not (test-path $profile)){
     New-Item -Path $profile -Type File -Force
 }
