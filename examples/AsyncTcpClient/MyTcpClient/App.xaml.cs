@@ -1,5 +1,4 @@
-﻿using Intergraph.IPS.Germany.Logging;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -23,7 +22,7 @@ namespace MyTcpClient
             }
             catch (Exception ex)
             {
-                GerLog.PrintError($"{ex}");
+                Console.WriteLine($"{ex}");
             }
         }
     }
