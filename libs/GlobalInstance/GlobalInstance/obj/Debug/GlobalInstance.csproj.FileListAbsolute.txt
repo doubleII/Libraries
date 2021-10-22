@@ -1,8 +1,0 @@
-C:\Developement\MyCommonInfo\@MyLibs\GlobalInstance\GlobalInstance\bin\Debug\GlobalInstance.dll
-C:\Developement\MyCommonInfo\@MyLibs\GlobalInstance\GlobalInstance\bin\Debug\GlobalInstance.pdb
-C:\Developement\MyCommonInfo\@MyLibs\GlobalInstance\GlobalInstance\bin\Debug\IpsGerLog.dll
-C:\Developement\MyCommonInfo\@MyLibs\GlobalInstance\GlobalInstance\bin\Debug\IpsGerLog.pdb
-C:\Developement\MyCommonInfo\@MyLibs\GlobalInstance\GlobalInstance\obj\Debug\GlobalInstance.csproj.CoreCompileInputs.cache
-C:\Developement\MyCommonInfo\@MyLibs\GlobalInstance\GlobalInstance\obj\Debug\GlobalInstance.csproj.CopyComplete
-C:\Developement\MyCommonInfo\@MyLibs\GlobalInstance\GlobalInstance\obj\Debug\GlobalInstance.dll
-C:\Developement\MyCommonInfo\@MyLibs\GlobalInstance\GlobalInstance\obj\Debug\GlobalInstance.pdb

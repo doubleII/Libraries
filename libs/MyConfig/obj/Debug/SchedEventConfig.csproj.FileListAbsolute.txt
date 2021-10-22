@@ -1,5 +1,0 @@
-C:\Developement\DefaultCollection\Tirol_94\Addons\SchedEventPresenter\config\SchedEventConfig\bin\Debug\SchedEventConfig.dll
-C:\Developement\DefaultCollection\Tirol_94\Addons\SchedEventPresenter\config\SchedEventConfig\bin\Debug\SchedEventConfig.pdb
-C:\Developement\DefaultCollection\Tirol_94\Addons\SchedEventPresenter\config\SchedEventConfig\obj\Debug\SchedEventConfig.csproj.CoreCompileInputs.cache
-C:\Developement\DefaultCollection\Tirol_94\Addons\SchedEventPresenter\config\SchedEventConfig\obj\Debug\SchedEventConfig.dll
-C:\Developement\DefaultCollection\Tirol_94\Addons\SchedEventPresenter\config\SchedEventConfig\obj\Debug\SchedEventConfig.pdb
