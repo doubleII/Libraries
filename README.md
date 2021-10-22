@@ -10,7 +10,7 @@
 ## Libraries
 ...
 
-## Exampels
+## Examples
 
 1. Asynchrone TCP/IP Client-Server communication.
 2. Sample way to measure execution time.
