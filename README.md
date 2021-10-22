@@ -22,7 +22,7 @@ dotnet add package System.Threading.Tasks.Dataflow
 
 4. WPF 
  * DataGrid Image convertor example
- * Interaction Triger example 
+ * Interaction Trigger example 
  * Mvvm navigation
- * Framworks- how to make docking libraries
+ * Framworks examples- how to make docking libraries
  * Custom DataGrid Sorting function
