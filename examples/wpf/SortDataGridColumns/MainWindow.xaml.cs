@@ -30,7 +30,7 @@ namespace SortDataGridColumns
         public MainWindow()
         {
             InitializeComponent();
-            config = ConfigurationManager.GetSection("SchedEventTable") as MyConfigSection;
+            config = ConfigurationManager.GetSection("Table") as MyConfigSection;
 
             int i = 0;
             foreach (MyConfigInstanceElement item in config.Instances)
@@ -82,14 +82,14 @@ namespace SortDataGridColumns
     {
         public string Type { get; set;}
 
-        public string PD_FIRSNAME { get; set; }
-        public string PD_LASTNAME { get; set; }
-        public string PD_SVNR { get; set; }
-        public string PD_GENDER { get; set; }
-        public string PD_BIRTHDATE { get; set; }
-        public string PD_WOHNORT { get; set; }
-        public string PD_STRASSE { get; set; }
-        public string PD_HAUSNR { get; set; }
+        public string FIRSNAME { get; set; }
+        public string LASTNAME { get; set; }
+        public string NUMBER { get; set; }
+        public string GENDER { get; set; }
+        public string BIRTHDATE { get; set; }
+        public string WOHNORT { get; set; }
+        public string STRASSE { get; set; }
+        public string HAUSNR { get; set; }
 
         public string Contact { get; set; }
 
@@ -101,7 +101,7 @@ namespace SortDataGridColumns
         public int? NumberOfDays { get; set; }
         public string AllDays { get; set; }
 
-        public string KT_PICK_DT { get; set; }
+        public string PICK { get; set; }
 
     }
 
