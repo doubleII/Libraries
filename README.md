@@ -4,7 +4,6 @@
 * Examples
 * Snippets
 * Benchmarks
-* example
 * OpenSSL
 
 ## Libraries
