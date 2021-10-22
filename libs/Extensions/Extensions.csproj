@@ -41,9 +41,6 @@
     <OutputPath>bin\x64\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IpsGerLog">
-      <HintPath>..\..\..\PatientenSuche\PatientFinder\bin\Debug\IpsGerLog.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
@@ -59,20 +56,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query.cs" />
     <Compile Include="Utility.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Patientensuche\CommandHandler\CommandHandler.csproj">
-      <Project>{B1133279-93B3-414D-B68D-817C3C32355F}</Project>
-      <Name>CommandHandler</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\PatientenSuche\PatientDataTypes\PatientDataTypes.csproj">
-      <Project>{EBD0291E-596E-47CE-AD3E-02693BE954F2}</Project>
-      <Name>PatientDataTypes</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Terminserie\SerienDataTypes\SerienDataTypes\SerienDataTypes.csproj">
-      <Project>{300d55f3-aecf-45c3-8adc-4285ffa1d621}</Project>
-      <Name>SerienDataTypes</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

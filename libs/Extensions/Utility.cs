@@ -1,7 +1,4 @@
-﻿using Intergraph.IPS.Germany.CommandHandler;
-using Intergraph.IPS.Germany.Logging;
-using Intergraph.IPS.Germany.RFL.PatientData;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
@@ -14,8 +11,15 @@ namespace Extensions
 {
     public static class Utility
     {
-		
-		
+        
+         public static bool IsEmpty<T>(this IEnumerable<T> source)
+        {
+            if (source is null)
+                return true;
+
+            return !source.Any();
+        }
+        
         private string ByteArrayToString(byte[] arr)
         {
             System.Text.Encoding enc = System.Text.Encoding.GetEncoding("ISO-8859-1");
@@ -26,7 +30,7 @@ namespace Extensions
         {
             if (table.Rows.Count == 0)
             {
-                GerLog.PrintError($"Database error. No etry found!");
+                Console.WriteLine($"Database error. No etry found!");
                 MessageBox.Show($"Anzahl der Einträge {table.Rows.Count}. Die Datenbank muss gepflegt werden.\nRufen Sie bitte den Administrator.", "Datenbankfehlermeldung", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
@@ -40,7 +44,7 @@ namespace Extensions
             }
             else
             {
-                GerLog.PrintError($"Database mismatch");
+                Console.WriteLine($"Database mismatch");
                 MessageBox.Show($"Anzahl der Einträge {table.Rows.Count}. Rufen Sie bitte den Administrator!\n Mehr Info finden Sie in der Log-Datei.", "Fehlermeldung", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
@@ -106,16 +110,16 @@ namespace Extensions
 
         public static bool HasOnlyNumbers(this string text)
         {
-			if(string.IsNullOrEmpty(text))
-				return true;
-				
+            if(string.IsNullOrEmpty(text))
+                return true;
+                
             var t = text;
             if (Regex.IsMatch(t, "^[0-9]*$"))
                 return true;
             return false;
         }
-		
-		    /// <summary>
+        
+            /// <summary>
         /// https://regexlib.com/Search.aspx?k=phone&AspxAutoDetectCookieSupport=1
         /// </summary>
         /// <param name="source"></param>
@@ -164,10 +168,10 @@ namespace Extensions
         /// <param name="strtime"></param>
         /// <returns></returns>
         public static DateTime? ConvertStringTimeToDateTime2(this string strtime)
-	{
-			if (string.IsNullOrEmpty(strtime))
-			return null;
-				
+    {
+            if (string.IsNullOrEmpty(strtime))
+            return null;
+                
             if (DateTime.TryParseExact(strtime, "yyyyMMddHHmmss", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime result))
                 return result;
 
@@ -236,25 +240,25 @@ namespace Extensions
                 return exitcode;
             }
         }
-		
-		public static uint? TryParseNullable(this string val)
+        
+        public static uint? TryParseNullable(this string val)
         {
             int outValue;
             return int.TryParse(val, out outValue) ? (uint?)outValue : null;
         }
-		
-		
-		public static string UppercaseFirst(this string str)
+        
+        
+        public static string UppercaseFirst(this string str)
         {
             if (string.IsNullOrEmpty(str))
                 return string.Empty;
 
             return char.ToUpper(str[0]) + str.Substring(1).ToLower();
         }
-		
-		
-		
-		/// <summary>
+        
+        
+        
+        /// <summary>
         /// Get string value after [first] a.
         /// </summary>
         public static string Before(this string value, string a)
@@ -266,7 +270,7 @@ namespace Extensions
             }
             return value.Substring(0, posA);
         }
-		
+        
         /// <summary>
         /// Get string value between [first] a and [last] b.
         /// </summary>
@@ -289,8 +293,8 @@ namespace Extensions
             }
             return value.Substring(adjustedPosA, posB - adjustedPosA);
         }
-		
-	    /// <summary>
+        
+        /// <summary>
         /// Get string value after [last] a.
         /// </summary>
         public static string After(this string value, string a)
@@ -307,8 +311,8 @@ namespace Extensions
             }
             return value.Substring(adjustedPosA);
         }
-		
-		
+        
+        
         /// <summary>
         /// Get string value after [last] a.
         /// </summary>
@@ -326,16 +330,16 @@ namespace Extensions
             }
             return value.Substring(adjustedPosA);
         }
-		
-		
-		
-		 /// <summary>
+        
+        
+        
+         /// <summary>
         /// async await for methods thea are called from constructor
         /// </summary>
         /// <param name="task"></param>
         /// <param name="continueOnCapturedContext"></param>
         /// <param name="onException"></param>
-	    public static async void SafeFireAndForget(this System.Threading.Tasks.Task task, bool continueOnCapturedContext = true, Action<Exception> onException = null)
+        public static async void SafeFireAndForget(this System.Threading.Tasks.Task task, bool continueOnCapturedContext = true, Action<Exception> onException = null)
         {
             try
             {
@@ -348,8 +352,8 @@ namespace Extensions
                 onException(ex);
             }
         }
-		
-		  public static bool IsEmpty<T>(this IEnumerable<T> source)
+        
+          public static bool IsEmpty<T>(this IEnumerable<T> source)
         {
             if (source is null)
                 return true;

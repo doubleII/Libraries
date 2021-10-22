@@ -69,9 +69,9 @@ namespace Extensions
                                    prop.SetValue(source, null, null);
                            }) ;
         }
-		
-		
-		        /// <summary>
+        
+        
+                /// <summary>
         /// enable property if contains name
         /// </summary>
         /// <typeparam name="T"></typeparam>
@@ -110,8 +110,8 @@ namespace Extensions
                                     prop.SetValue(source, false); 
                            });
         }
-		
-		       /// <summary>
+        
+               /// <summary>
         /// check if empty property if contains name
         /// </summary>
         /// <typeparam name="T"></typeparam>
