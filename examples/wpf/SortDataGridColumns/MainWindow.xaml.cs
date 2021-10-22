@@ -101,7 +101,7 @@ namespace SortDataGridColumns
         public int? NumberOfDays { get; set; }
         public string AllDays { get; set; }
 
-        public string KT_PICK_DT { get; set; }
+        public string PICK { get; set; }
 
     }
 
