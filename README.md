@@ -13,7 +13,7 @@
 
 1. Asynchrone TCP/IP Client-Server communication.
 2. Sample way to measure execution time.
-3. Produce Consumer example with dataflow pattern using *TPL data flow library*. This TPL Library `System.Threading.Tasks.DataFlow` is not distributet with .Net. To install the `System.Threading.Task.Dataflow` namespace in Visual Studio you need to install the NuGet Packege `System.Threading.Tasks.Dataflow` package.
+3. Produce Consumer example with dataflow pattern using *TPL data flow library*. This TPL Library `System.Threading.Tasks.DataFlow` is not distributet with `.Net`. To install the `System.Threading.Task.Dataflow` namespace in Visual Studio you need to install the NuGet Packege `System.Threading.Tasks.Dataflow` package.
 
 CORE CLI 
 ```bash
