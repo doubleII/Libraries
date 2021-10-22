@@ -88,11 +88,9 @@
     </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\..\..\packages\GerSoundex_94.1.5.2004.1\build\GerSoundex_94.targets" Condition="Exists('..\..\..\packages\GerSoundex_94.1.5.2004.1\build\GerSoundex_94.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\..\packages\GerSoundex_94.1.5.2004.1\build\GerSoundex_94.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\GerSoundex_94.1.5.2004.1\build\GerSoundex_94.targets'))" />
   </Target>
 </Project>
