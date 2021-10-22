@@ -1,5 +1,4 @@
-﻿using Intergraph.IPS.Germany.Logging;
-using System;
+﻿using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
@@ -27,12 +26,12 @@ namespace GlobalInstance
             // get user rights
             if (_mutex.WaitOne(TimeSpan.Zero, true))
             {
-                GerLog.PrintInfo("Current access rules:");
+                Console.WriteLine("Current access rules:");
                 foreach (MutexAccessRule accessRule in securitySettings.GetAccessRules(true, true, typeof(NTAccount)))
                 {
-                    GerLog.PrintInfo($"User: {accessRule.IdentityReference}");
-                    GerLog.PrintInfo($"Type: {accessRule.AccessControlType}");
-                    GerLog.PrintInfo($"Rights: {accessRule.MutexRights}");
+                    Console.WriteLine($"User: {accessRule.IdentityReference}");
+                    Console.WriteLine($"Type: {accessRule.AccessControlType}");
+                    Console.WriteLine($"Rights: {accessRule.MutexRights}");
                 }
             }
 
