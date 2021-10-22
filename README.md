@@ -1,4 +1,4 @@
-## C# Projectes
+## C# Projects
 ## Table of content
 * Libraries
 * Examples
