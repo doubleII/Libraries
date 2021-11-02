@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Developement\MyCommonInfo\@Demos\Test Projects\WPF\MvvmNavigation\MvvmNavigation\obj\Debug\
+C:\Developement\MyCommonInfo\@MyLibs\Libraries\examples\wpf\MvvmNavigation\MvvmNavigation\obj\Debug\
 MvvmNavigation
 none
 false
 DEBUG;TRACE
-C:\Developement\MyCommonInfo\@Demos\Test Projects\WPF\MvvmNavigation\MvvmNavigation\App.xaml
+C:\Developement\MyCommonInfo\@MyLibs\Libraries\examples\wpf\MvvmNavigation\MvvmNavigation\App.xaml
 3-1906146315
 
-17300286145
+181125802726
 131726951844
 MainWindow.xaml;UserControl1.xaml;UserControl2.xaml;
 
-False
+True
 

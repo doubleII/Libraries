@@ -49,6 +49,10 @@ namespace Extensions
                 return false;
             }
         }
+		
+		public static long GetTimeDiff(this currentTime, DateTime time){
+			 return Microsoft.VisualBasic.DateAndTime.DateDiff(Microsoft.VisualBasic.DateInterval.Minute, DateTime.Now, time);
+		}
 
         /// <summary>
         /// try parse date time
