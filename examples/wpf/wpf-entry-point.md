@@ -39,7 +39,7 @@ If you want to see the default start-up points expand the `App.xaml` into soluti
       
 ## Define the start-up of wpf application
 
-1. Changed startup settings in `App.xaml` file.<br/>
+1. Change the startup settings in `App.xaml` file.<br/>
 ```xml
 <Application x:Class="GlobalExceptionHandling.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
