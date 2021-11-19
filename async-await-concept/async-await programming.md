@@ -7,7 +7,12 @@
 
 ## Asynchronus programming using async-await
 
+1. Sequence
+2. Selection
+3. Iteration
+
 The idee behind this concept.
+
 ... in arbeit
 
 
