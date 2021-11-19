@@ -25,7 +25,7 @@ var readAsync = File.ReadAllLinesAsyns("file.txt");
 var lines = readAsync.Result;
 ```
 
-#### It is good Idee? 
+#### Is it good Idee? 
 Allow as to schedule a job, in this case an Action. Takes no argument of Task<string[]> and returns void back. It means, returns a task just completed.
 ```c# 
 var readAsync = File.ReadAllLinesAsyns("file.txt");
