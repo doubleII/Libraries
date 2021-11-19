@@ -50,7 +50,8 @@ Console.WriteLine("You are here!");
 ```
 
 #### The Magic words
-We need to find something else, something simple and efficiently. Something just like a magic. Some people call this `Harry Potter programming`. 
+We need to find something else, something simple and efficiently. Something just like a magic. 
+<br/>Some people call this `Harry Potter programming`. 
 <br/>This is like a magic, you do something and you don't need to know, what's happens, it's just works :).
 
 Using the magic words `async-awat`:
