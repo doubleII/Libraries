@@ -1,0 +1,6 @@
+﻿Notification package
+Tuplep.NotificationWindow - Version 1.1.37
+
+for System.Windows.Interactivity
+Expression.Blend.Sdk - Version 1.0.2
+

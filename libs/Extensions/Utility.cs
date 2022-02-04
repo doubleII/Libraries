@@ -50,7 +50,8 @@ namespace Extensions
             }
         }
 		
-		public static long GetTimeDiff(this currentTime, DateTime time){
+		/// get time intervall from now in minutes back
+		public static long GetTimeDiff(this DateTime time){
 			 return Microsoft.VisualBasic.DateAndTime.DateDiff(Microsoft.VisualBasic.DateInterval.Minute, DateTime.Now, time);
 		}
 
@@ -357,12 +358,33 @@ namespace Extensions
             }
         }
         
-          public static bool IsEmpty<T>(this IEnumerable<T> source)
+        public static bool IsEmpty<T>(this IEnumerable<T> source)
         {
             if (source is null)
                 return true;
             
             return !source.Any();
+        }
+		
+		public static bool IsNotNullOrEmpty<T>(this T input, Func<T, bool> condition)
+        {
+            Console.WriteLine($">>{input}");
+
+            if (condition(input))
+                return false;
+            return true;
+        }
+		
+		
+		public static StringBuilder addValue<T>(T x, T y, string oldValue, string newValue, StringBuilder result, Func<T, T, bool> condition)
+        {
+            if (condition(x, y))
+                return result.Replace(oldValue, newValue);
+            
+            if (newValue is "'T'")
+                return result.Replace(oldValue, "'F'");
+
+            return result.Replace(oldValue, null);
         }
     }
 }

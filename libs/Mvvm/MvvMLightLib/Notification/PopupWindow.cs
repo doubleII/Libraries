@@ -1,7 +1,7 @@
 ﻿using MvvMLightLib.Properties;
 using Tulpep.NotificationWindow;
 
-namespace PatientenMonitor.Notification
+namespace Notification
 {
     public static class PopupWindow
     {

@@ -5,27 +5,31 @@ namespace Extensions
 {
     public static class Query
     {
-        public static string addProjection(this string source)
-        {
-            if (string.IsNullOrEmpty(source))
-                return null;
-            return $"'{source}'";
-        }
+		 public static string addProjection(this string source) => (string.IsNullOrEmpty(source)) : null $"'{source}'";
+        // public static string addProjection(this string source)
+        // {
+            // if (string.IsNullOrEmpty(source))
+                // return null;
+            // return $"'{source}'";
+        // }
 
-        public static string addProjection(this string[] source, string item)
-        {
-            if (source.Length == 0)
-                return null;
-            return $"'{item}'";
-        }
+		public static string addProjection(this string[] source, string item) => (source.Length == 0) ? null : $"'{item}'";
+        // public static string addProjection(this string[] source, string item)
+        // {
+            // if (source.Length == 0)
+                // return null;
+            // return $"'{item}'";
+        // }
 
-        public static string addCondition(this string str, bool condition, string statement)
-        {
-            if (!condition)
-                return str;
+		public static string addCondition(this string str, bool condition, string statement) => 
+			(!condition) ? str : str + (!str.Contains(" WHERE ") ? " WHERE " : " ") + statement;
+        // public static string addCondition(this string str, bool condition, string statement)
+        // {
+            // if (!condition)
+                // return str;
 
-            return str + (!str.Contains(" WHERE ") ? " WHERE " : " ") + statement;
-        }
+            // return str + (!str.Contains(" WHERE ") ? " WHERE " : " ") + statement;
+        // }
 
         public static string cleanProjection(this string source)
         {
@@ -40,13 +44,16 @@ namespace Extensions
             return source;
         }
 
-        public static string cleanCondition(this string str)
-        {
-            if (!str.Contains(" WHERE "))
-                return str;
+		public static string cleanCondition(this string str)
+			=> (!str.Contains(" WHERE ")) ? str : str.Replace(" WHERE AND ", " WHERE ").Replace(" WHERE OR ", " WHERE ");
+        
+        // public static string cleanCondition(this string str)
+        // {
+            // if (!str.Contains(" WHERE "))
+                // return str;
 
-            return str.Replace(" WHERE AND ", " WHERE ").Replace(" WHERE OR ", " WHERE ");
-        }
+            // return str.Replace(" WHERE AND ", " WHERE ").Replace(" WHERE OR ", " WHERE ");
+        // }
         public static string ReplaceWhereAndWithWhereOrCondition(this string str)
         {
             if (!str.Contains(" WHERE "))
@@ -71,18 +78,12 @@ namespace Extensions
 
         public static string IsNullIfEmpty<T>(this T[] array, string output) where T : class
         {
-            if (array == null || array.Length == 0)
-                return null;
-            else
-                return output;
+            return (array == null || array.Length == 0) ? null : output;
         }
 
         public static bool IsFalseIfEmpty<T>(this T[] array) where T : class
         {
-            if (array == null || array.Length == 0)
-                return false;
-            else
-                return true;
+            return (array == null || array.Length == 0) ? false : true;
         }
 
         public static bool IsTrueIfEmpty<T>(this IEnumerable<T> source)
@@ -114,6 +115,18 @@ namespace Extensions
             if (index != -1)
                 sql = sql.Substring(0, index);
             return sql;
+        }
+		
+		 /// <summary>
+        /// convert db value
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public static T ConvertFromDBVal<T>(this object obj)
+        {
+            // returns the default value for the type or the object
+            return (obj == null || obj == DBNull.Value) ? default(T) : (T)obj;
         }
     }
 }
