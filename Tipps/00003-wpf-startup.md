@@ -2,8 +2,6 @@
 
 Change App.xam
 
-**Importent: The MainWindow.xaml is into Views folder.**
-
 ```c#
 <Application x:Class="Yournamespace.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -22,7 +20,7 @@ to
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Yournamespace"
-             Startup="Views/MainWindow.xaml">
+             Startup="Application_Startup">
     <Application.Resources>
          
     </Application.Resources>
