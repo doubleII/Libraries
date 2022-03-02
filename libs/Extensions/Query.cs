@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Extensions
 {
     public static class Query
     {
-		 public static string addProjection(this string source) => (string.IsNullOrEmpty(source)) : null $"'{source}'";
+         public static string addProjection(this string source) => string.IsNullOrEmpty(source) ? null : $"'{source}'";
         // public static string addProjection(this string source)
         // {
             // if (string.IsNullOrEmpty(source))
@@ -13,7 +14,7 @@ namespace Extensions
             // return $"'{source}'";
         // }
 
-		public static string addProjection(this string[] source, string item) => (source.Length == 0) ? null : $"'{item}'";
+        public static string addProjection(this string[] source, string item) => (source.Length == 0) ? null : $"'{item}'";
         // public static string addProjection(this string[] source, string item)
         // {
             // if (source.Length == 0)
@@ -21,8 +22,8 @@ namespace Extensions
             // return $"'{item}'";
         // }
 
-		public static string addCondition(this string str, bool condition, string statement) => 
-			(!condition) ? str : str + (!str.Contains(" WHERE ") ? " WHERE " : " ") + statement;
+        public static string addCondition(this string str, bool condition, string statement) => 
+            (!condition) ? str : str + (!str.Contains(" WHERE ") ? " WHERE " : " ") + statement;
         // public static string addCondition(this string str, bool condition, string statement)
         // {
             // if (!condition)
@@ -44,8 +45,8 @@ namespace Extensions
             return source;
         }
 
-		public static string cleanCondition(this string str)
-			=> (!str.Contains(" WHERE ")) ? str : str.Replace(" WHERE AND ", " WHERE ").Replace(" WHERE OR ", " WHERE ");
+        public static string cleanCondition(this string str)
+            => (!str.Contains(" WHERE ")) ? str : str.Replace(" WHERE AND ", " WHERE ").Replace(" WHERE OR ", " WHERE ");
         
         // public static string cleanCondition(this string str)
         // {
@@ -116,8 +117,8 @@ namespace Extensions
                 sql = sql.Substring(0, index);
             return sql;
         }
-		
-		 /// <summary>
+        
+         /// <summary>
         /// convert db value
         /// </summary>
         /// <typeparam name="T"></typeparam>

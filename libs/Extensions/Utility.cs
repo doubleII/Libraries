@@ -4,6 +4,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -20,7 +21,7 @@ namespace Extensions
             return !source.Any();
         }
         
-        private string ByteArrayToString(byte[] arr)
+        private static string ByteArrayToString(byte[] arr)
         {
             System.Text.Encoding enc = System.Text.Encoding.GetEncoding("ISO-8859-1");
             return enc.GetString(arr);
@@ -49,11 +50,11 @@ namespace Extensions
                 return false;
             }
         }
-		
-		/// get time intervall from now in minutes back
-		public static long GetTimeDiff(this DateTime time){
-			 return Microsoft.VisualBasic.DateAndTime.DateDiff(Microsoft.VisualBasic.DateInterval.Minute, DateTime.Now, time);
-		}
+        
+        /// get time intervall from now in minutes back
+        public static long GetTimeDiff(this DateTime time){
+             return Microsoft.VisualBasic.DateAndTime.DateDiff(Microsoft.VisualBasic.DateInterval.Minute, DateTime.Now, time);
+        }
 
         /// <summary>
         /// try parse date time
@@ -357,16 +358,8 @@ namespace Extensions
                 onException(ex);
             }
         }
-        
-        public static bool IsEmpty<T>(this IEnumerable<T> source)
-        {
-            if (source is null)
-                return true;
-            
-            return !source.Any();
-        }
-		
-		public static bool IsNotNullOrEmpty<T>(this T input, Func<T, bool> condition)
+
+        public static bool IsNotNullOrEmpty<T>(this T input, Func<T, bool> condition)
         {
             Console.WriteLine($">>{input}");
 
@@ -374,9 +367,9 @@ namespace Extensions
                 return false;
             return true;
         }
-		
-		
-		public static StringBuilder addValue<T>(T x, T y, string oldValue, string newValue, StringBuilder result, Func<T, T, bool> condition)
+        
+        
+        public static StringBuilder addValue<T>(T x, T y, string oldValue, string newValue, StringBuilder result, Func<T, T, bool> condition)
         {
             if (condition(x, y))
                 return result.Replace(oldValue, newValue);
@@ -385,6 +378,18 @@ namespace Extensions
                 return result.Replace(oldValue, "'F'");
 
             return result.Replace(oldValue, null);
+        }
+
+        /// <summary>
+        /// convert db value
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public static T ConvertFromDBVal<T>(this object obj)
+        {
+            // returns the default value for the type or the object
+            return (obj == null || obj == DBNull.Value) ? default(T) : (T)obj;
         }
     }
 }
