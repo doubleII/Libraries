@@ -97,6 +97,10 @@ or you can put directly your style settings into resource file [tutorial](https:
     <StackPanel>
       <fa:ImageAwesome Icon="Github"></fa:ImageAwesome>
     </StackPanel>
+    
+     <StackPanel>
+      <fa:ImageAwesome Icon="Spinner" Spin="True" SpinDuration="2" Width="80" Height="80"></fa:ImageAwesome>
+    </StackPanel>
   </Grid>
   
 </Window>
