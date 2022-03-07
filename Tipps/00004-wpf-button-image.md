@@ -15,3 +15,5 @@ Image Properties
                 <Image Source="left-arrow.png" Height="15"/>
             </Button>
 ```
+
+If you want to use FontAwesome icons look [here](https://github.com/doubleII/Libraries/blob/main/Tipps/00007-wpf-resource-file.md)
