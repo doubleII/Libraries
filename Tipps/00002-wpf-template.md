@@ -18,8 +18,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:YourApp"
         mc:Ignorable="d"
+        Background="#FFF4F4F5"
         Title="{Binding Title}" Height="450" Width="800">
-    <Grid>
+        
+  <Border Margin="5 5 5 0" Background="White">     
+ 
+      <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height=".06*"/>
@@ -30,6 +34,9 @@
                        Margin="10 0 0 0"
                        Text="{Binding Status, UpdateSourceTrigger=PropertyChanged}"/>
     </Grid>
+          
+  </Border>
+        
 </Window>
 
 ```
