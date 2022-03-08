@@ -68,6 +68,9 @@ or you can put this settings into `App.xaml` file:
   
 </Grid>
 ```
+
+Add ResourceDictionary.xaml file to the project.
+
 or you can put directly your style settings into resource file [tutorial](https://www.youtube.com/watch?v=Y9hElE-vx34&ab_channel=ToskersCorner)
 
 ## Font Awesome icons
