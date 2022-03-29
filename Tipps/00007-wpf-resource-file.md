@@ -89,7 +89,7 @@ Add ResourceDictionary.xaml file to the project. Resource file [tutorial](https:
 ```xaml
 <Window x:class="YourApp"
   ...
-  xmlns:fa="clr-namespace:FontAwesome.WPF;assembly="FontAwesome.WPF"
+  xmlns:fa="clr-namespace:FontAwesome.WPF;assembly=FontAwesome.WPF"
   ...
 >
 
