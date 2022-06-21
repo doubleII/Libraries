@@ -13,7 +13,7 @@
 
 The idee behind this concept.
 
-... in arbeit
+... in arbeit [More Info](https://github.com/davidfowl/AspNetCoreDiagnosticScenarios/blob/master/AsyncGuidance.md)
 
 
 # Don't do that, this is not good idee
