@@ -24,40 +24,41 @@
         </EventTrigger>
     </Window.Triggers>
 
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Grid Grid.Column="1">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Grid Grid.Row="0"
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="14.962"/>
+                    <RowDefinition Height="15.038"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0"
                   Height="15"
                   HorizontalAlignment="Left">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="Auto"/>
-                        </Grid.ColumnDefinitions>
-                    </Grid>
-                    <StackPanel Grid.Row="1" Orientation="Horizontal">
-                        <Button Content="View A"
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.RowSpan="2">
+                    <Button Content="View A"
                                 Style="{StaticResource PluginButtons}"
                                 Command="{Binding ViewACommand}"/>
-                        <Button Content="View B"
+                    <Button Content="View B"
                         Style="{StaticResource PluginButtons}"/>
-                        <Button Content="View C"
+                    <Button Content="View C"
                         Style="{StaticResource PluginButtons}"/>
-                    </StackPanel>
-                    <custom:DockManager Grid.Row="2" Name ="dockManager" Grid.Column="0" Background="{DynamicResource MaterialDesignPaper}"/>
-                </Grid>
+                </StackPanel>
+                <custom:DockManager Grid.Row="3" Name ="dockManager" Grid.Column="0" Background="{DynamicResource MaterialDesignPaper}"/>
             </Grid>
-            <Grid Grid.Column="0" x:Name="GridMenu" Width="50" HorizontalAlignment="Left" Background="#778899">
-                <StackPanel>
+        </Grid>
+        <Grid Grid.Column="0" x:Name="GridMenu" Width="50" HorizontalAlignment="Left" Background="#778899">
+            <StackPanel>
                 <Grid Height="150" Background="White"  RenderTransformOrigin="0.5,0.5">
                     <Grid.RenderTransform>
                         <TransformGroup>
@@ -71,82 +72,82 @@
                                 Style="{StaticResource OpenCloseButtons}"
                                 Command="{Binding CloseMenuCommand}"
                                 Visibility="{Binding CloseButtonVisibility, UpdateSourceTrigger=PropertyChanged}">
-                            <materialDesign:PackIcon Kind="ArrowLeft" 
+                        <materialDesign:PackIcon Kind="ArrowLeft" 
                                                      Width="25"
                                                      Height="25"
                                                      Foreground="Black"
                                                      Visibility="{Binding CloseButtonVisibility, UpdateSourceTrigger=PropertyChanged}"/>
-                        </Button>
-                        <Button x:Name="ButtonOpenMenu"
+                    </Button>
+                    <Button x:Name="ButtonOpenMenu"
                                 Style="{StaticResource OpenCloseButtons}"
                                 Command="{Binding OpenMenuCommand}"
                                 Visibility="{Binding OpenButtonVisibility, UpdateSourceTrigger=PropertyChanged}">
-                            <materialDesign:PackIcon Kind="Menu" 
+                        <materialDesign:PackIcon Kind="Menu" 
                                                      Height="30" 
                                                      Width="30"
                                                       Margin="3"
                                                      Foreground="Black"/>
-                        </Button>
-                    </Grid>
+                    </Button>
+                </Grid>
                 <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled">
-                        <ListViewItem Height="60">
-                            <StackPanel Orientation="Horizontal">
-                                <materialDesign:PackIcon Kind="ViewDashboard" 
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="ViewDashboard" 
                                                          Height="25" 
                                                          Width="25" 
                                                          Margin="2"
                                                          Foreground="#556677"
                                                          VerticalAlignment="Center"/>
-                                <TextBlock Text="Home" 
+                            <TextBlock Text="Home" 
                                            Foreground="#556677" 
                                            VerticalAlignment="Center"
                                            Margin="20 10 "/>
-                            </StackPanel>
-                        </ListViewItem>
-                        <ListViewItem Height="60">
-                            <StackPanel Orientation="Horizontal">
-                                <materialDesign:PackIcon Kind="Pencil" 
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Pencil" 
                                                          Height="25" 
                                                          Width="25" 
                                                          Margin="2"
                                                          Foreground="#556677"
                                                          VerticalAlignment="Center"/>
-                                <TextBlock Text="Create" 
+                            <TextBlock Text="Create" 
                                            Foreground="#556677" 
                                            VerticalAlignment="Center"
                                            Margin="20 10 "/>
-                            </StackPanel>
-                        </ListViewItem>
-                        <ListViewItem Height="60">
-                            <StackPanel Orientation="Horizontal">
-                                <materialDesign:PackIcon Kind="Call" 
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Call" 
                                                          Height="25" 
                                                          Width="25" 
                                                          Margin="2"
                                                          Foreground="#556677"
                                                          VerticalAlignment="Center"/>
-                                <TextBlock Text="Call" 
+                            <TextBlock Text="Call" 
                                            Foreground="#556677" 
                                            VerticalAlignment="Center"
                                            Margin="20 10 "/>
-                            </StackPanel>
-                        </ListViewItem>
-                        <ListViewItem Height="60">
-                            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
-                                <materialDesign:PackIcon Kind="ExitToApp" 
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="60">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                            <materialDesign:PackIcon Kind="ExitToApp" 
                                                          Height="25" 
                                                          Width="25" 
                                                          Margin="2"
                                                          Foreground="#556677"
                                                          VerticalAlignment="Center"/>
-                                <TextBlock Text="Exit" 
+                            <TextBlock Text="Exit" 
                                            Foreground="#556677" 
                                            VerticalAlignment="Center"
                                            Margin="20 10 "/>
-                            </StackPanel>
-                        </ListViewItem>
-                    </ListView>
-                </StackPanel>
-            </Grid>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+            </StackPanel>
         </Grid>
+    </Grid>
 </Window>

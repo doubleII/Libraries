@@ -26,3 +26,31 @@ C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\M
 C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\MyApp\bin\Debug\ViewAModul.pdb
 C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\MyApp\obj\Debug\Resources\StoryBoard.baml
 C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\MyApp\obj\Debug\Resources\ButtonsDictionary.baml
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\bin\Debug\MyApp.exe.config
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\bin\Debug\MyApp.exe
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\bin\Debug\MyApp.pdb
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\bin\Debug\Commands.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\bin\Debug\DockingLibrary.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\bin\Debug\MaterialDesignColors.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\bin\Debug\ViewAModul.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\bin\Debug\Commands.pdb
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\bin\Debug\ViewAModul.pdb
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\bin\Debug\MaterialDesignColors.pdb
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\MyApp.csproj.AssemblyReference.cache
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\Resources\ButtonsDictionary.baml
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\Resources\StoryBoard.baml
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\Views\MainWindow.baml
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\App.baml
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\Views\MainWindow.g.cs
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\App.g.cs
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\MyApp_MarkupCompile.cache
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\MyApp.g.resources
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\MyApp.Properties.Resources.resources
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\MyApp.csproj.GenerateResource.cache
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\MyApp.csproj.CoreCompileInputs.cache
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\MyApp.csproj.CopyComplete
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\MyApp.exe
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\MyApp\obj\Debug\MyApp.pdb

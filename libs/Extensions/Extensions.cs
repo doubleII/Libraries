@@ -134,5 +134,17 @@ namespace Extensions
                            });
             return result;
         }
+		
+		        /// <summary>
+        /// check proprerty from T if null
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public static IEnumerable<string> IsPropertyNotNull<T>(this T source)
+            => PropertyCache<T>.PublicProperties
+                    .Where(prop => prop.GetValue(source) == null).Select(prop => prop.Name).ToList();
+
+
     }
 }

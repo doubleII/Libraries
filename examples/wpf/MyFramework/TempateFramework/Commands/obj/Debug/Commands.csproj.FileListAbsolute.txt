@@ -3,3 +3,9 @@ C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\C
 C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\Commands\bin\Debug\Commands.pdb
 C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\Commands\obj\Debug\Commands.dll
 C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\Commands\obj\Debug\Commands.pdb
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\Commands\bin\Debug\Commands.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\Commands\bin\Debug\Commands.pdb
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\Commands\obj\Debug\Commands.csproj.AssemblyReference.cache
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\Commands\obj\Debug\Commands.csproj.CoreCompileInputs.cache
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\Commands\obj\Debug\Commands.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\Commands\obj\Debug\Commands.pdb

@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\ViewAModul\obj\Debug\
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\obj\Debug\
 ViewAModul
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 1-439560384
 
 3609750293
-17-1416199131
+17-1702823097
 Views\ViewA.xaml;
 
 False

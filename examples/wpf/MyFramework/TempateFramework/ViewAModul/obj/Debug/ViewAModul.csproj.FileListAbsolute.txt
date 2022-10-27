@@ -17,3 +17,22 @@ C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\V
 C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\ViewAModul\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\ViewAModul\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Temp\DefaultCollection\tests\Test Projects\WPF\MyFramework\TempateFramework\ViewAModul\bin\Debug\DockingLibrary.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\bin\Debug\ViewAModul.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\bin\Debug\ViewAModul.pdb
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\bin\Debug\Commands.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\bin\Debug\DockingLibrary.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\bin\Debug\MaterialDesignColors.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\bin\Debug\Commands.pdb
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\bin\Debug\MaterialDesignColors.pdb
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\obj\Debug\ViewAModul.csproj.AssemblyReference.cache
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\obj\Debug\Views\ViewA.baml
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\obj\Debug\Views\ViewA.g.cs
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\obj\Debug\ViewAModul_MarkupCompile.cache
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\obj\Debug\ViewAModul.g.resources
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\obj\Debug\ViewAModul.csproj.CoreCompileInputs.cache
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\obj\Debug\ViewAModul.csproj.CopyComplete
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\obj\Debug\ViewAModul.dll
+D:\Development\MyCommonCollection\@MyLibs\Libraries\examples\wpf\MyFramework\TempateFramework\ViewAModul\obj\Debug\ViewAModul.pdb

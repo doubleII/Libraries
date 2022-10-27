@@ -21,18 +21,21 @@ namespace Extensions
             return !source.Any();
         }
         
-        private static string ByteArrayToString(byte[] arr)
+        private static string ByteArrayToString(this byte[] arr)
         {
+			 if (arr is null)
+                return string.Empty;
+			
             System.Text.Encoding enc = System.Text.Encoding.GetEncoding("ISO-8859-1");
             return enc.GetString(arr);
         }
 
         public static bool IsSingleEntry(DataTable table)
         {
-            if (table.Rows.Count == 0)
+            if (table?.Rows?.Count <= 0)
             {
-                Console.WriteLine($"Database error. No etry found!");
-                MessageBox.Show($"Anzahl der Einträge {table.Rows.Count}. Die Datenbank muss gepflegt werden.\nRufen Sie bitte den Administrator.", "Datenbankfehlermeldung", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Trace.TraceError($"Database error. No etry found!");
+                //MessageBox.Show($"Anzahl der Einträge {table.Rows.Count}. Die Datenbank muss gepflegt werden.\nRufen Sie bitte den Administrator.", "Datenbankfehlermeldung", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             else if (table.Rows.Count == 1)
@@ -345,7 +348,7 @@ namespace Extensions
         /// <param name="task"></param>
         /// <param name="continueOnCapturedContext"></param>
         /// <param name="onException"></param>
-        public static async void SafeFireAndForget(this System.Threading.Tasks.Task task, bool continueOnCapturedContext = true, Action<Exception> onException = null)
+        public static async void SafeFireAndForget(this Task task, bool continueOnCapturedContext = true, Action<Exception> onException = null)
         {
             try
             {
@@ -390,6 +393,124 @@ namespace Extensions
         {
             // returns the default value for the type or the object
             return (obj == null || obj == DBNull.Value) ? default(T) : (T)obj;
+        }
+		
+		/// <summary>
+        /// replace single quote with double quote for sql statement
+        /// </summary>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public static void ReplaceSingleQuoteWithDouble<T>(this T source)
+        {
+            if (source is null)
+                return;
+
+            PropertyCache<T>.PublicProperties
+                           .Where(prop => prop.GetValue(source) != null && prop.CanWrite is true)
+                           .ToList().ForEach(prop =>
+                           {
+
+                               if (prop.PropertyType == typeof(string))
+                               {
+
+                                   string value = prop.GetValue(source)
+                                                  .ToString()
+                                                  .Replace("'", "''");
+
+                                   prop.SetValue(source, value);
+                               }
+
+                           });
+        }
+		
+		/// <summary>
+        /// first letter to upper case
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public static string UppercaseFirstLetter(this string str)
+        {
+            if (string.IsNullOrEmpty(str))
+                return string.Empty;
+
+            string result = null;
+
+            List<string> list = str.Trim()
+                                   .Split(' ')
+                                   .ToList();
+
+            foreach (string value in list)
+            {
+
+                if (string.IsNullOrEmpty(value))
+                    continue;
+
+                result += " " + char.ToUpper(value[0])
+                                + value.Substring(1)
+                                .ToLower();
+            }
+            return result.Trim();
+        }
+		
+		
+		public static string TraceCurrentPosition()
+        {
+            StackFrame callStack = new StackFrame(1, true);
+            return "LINE: " + callStack.GetFileLineNumber() + ", METHOD: " + MethodBase.GetCurrentMethod().Name;
+        }
+		
+		       /// <summary>
+        /// by success return value else return null
+        /// </summary>
+        /// <param name="time"></param>
+        /// <param name="func"></param>
+        /// <returns></returns>
+        public static string Wait(this int time , Func<string> func)
+        {
+
+            while (time > 0)
+            {
+                string result = func();
+                if (string.IsNullOrEmpty(result))
+                {
+
+                    GerLog.PrintDebug($" count down {time} sec | {DateTime.Now}");
+                    Thread.Sleep(1000);
+                    time--;
+                    continue;
+                }
+
+                return result;
+            }
+
+            return null;
+        }
+		
+	    /// <summary>
+        /// by success return value else return null
+        /// </summary>
+        /// <param name="time"></param>
+        /// <param name="func"></param>
+        /// <returns></returns>
+        public static async Task<object> WaitAsync(this int time, Func<int, object> func)
+        {
+
+            while (time > 0)
+            {
+                object result = func(time);
+                if (string.IsNullOrEmpty($"{result}"))
+                {
+
+                    Trace.TraceInformation($" async count down {time} sec | {DateTime.Now}");
+                    await Task.Delay(1000);
+                    time--;
+                    continue;
+                }
+
+                return result;
+            }
+
+            return null;
         }
     }
 }
