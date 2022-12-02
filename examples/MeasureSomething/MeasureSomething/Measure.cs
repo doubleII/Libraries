@@ -21,5 +21,14 @@ namespace MeasureSomething
             Console.WriteLine($">> measure time: {watch.Elapsed}");
             return result;
         }
+
+        public static string MeasureTimeFuncTo(Func<int, string> f, int to)
+        {
+            var watch = Stopwatch.StartNew();
+            string result = f(to);
+            watch.Start();
+            Console.WriteLine(string.Format(" -- messure time {0:mm\\:ss}", watch.Elapsed));
+            return result;
+        }
     }
 }
