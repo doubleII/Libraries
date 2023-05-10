@@ -34,6 +34,25 @@ namespace GlobalInstance
                     Console.WriteLine($"Rights: {accessRule.MutexRights}");
                 }
             }
+			
+			            else
+            {
+
+                Trace.TraceInformation("Found anthoter instance!");
+                Process[] tbPro = Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName);
+
+                foreach (Process p in tbPro)
+                {
+
+                    if (p.Id != Process.GetCurrentProcess().Id)
+                    {
+
+                        Trace.TraceInformation(" -- REMOVED");
+                        p.Kill();
+                        break;
+                    }
+                }
+            }
 
             _mutex.SetAccessControl(securitySettings);
         }
